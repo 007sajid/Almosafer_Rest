@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-09T20:11:43Z" name="Suite" finished-at="2022-12-09T20:11:47Z" duration-ms="3884">
+    <groups>
+    </groups>
+    <test started-at="2022-12-09T20:11:43Z" name="Test" finished-at="2022-12-09T20:11:47Z" duration-ms="3884">
+      <class name="tests.GetFlight">
+        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.GetFlight@2d83c5a5]" started-at="2022-12-10T01:11:45Z" name="setUpConfiguration" finished-at="2022-12-10T01:11:45Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfiguration -->
+        <test-method signature="testGetFlights()[pri:0, instance:tests.GetFlight@2d83c5a5]" started-at="2022-12-10T01:11:45Z" name="testGetFlights" finished-at="2022-12-10T01:11:47Z" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetFlights -->
+      </class> <!-- tests.GetFlight -->
+      <class name="tests.PostPricePolicy">
+        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.PostPricePolicy@41c62850]" started-at="2022-12-10T01:11:43Z" name="setUpConfiguration" finished-at="2022-12-10T01:11:43Z" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfiguration -->
+        <test-method signature="postPricePolicy()[pri:0, instance:tests.PostPricePolicy@41c62850]" started-at="2022-12-10T01:11:43Z" name="postPricePolicy" finished-at="2022-12-10T01:11:45Z" duration-ms="1760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postPricePolicy -->
+      </class> <!-- tests.PostPricePolicy -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
