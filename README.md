@@ -34,11 +34,11 @@ Main folder have all the structure required to make JSON request with the data n
 	- PostPricePolicy.java automates a POST API call and verify responses with dynamic dates. Dates data can be provided via Variables and Files.
 
 ## How to run
-Just pull the code and open in any IDE (Eclipse in my case) 
-Import the maven dependencies
-Enter following commands in order to see the run.
-mvn clean 
-mvn test
+- Just pull the code and open in any IDE (Eclipse in my case)
+- Import the maven dependencies
+- Enter following commands in order to see the run.
+- mvn clean
+- mvn test
 
 ## Reports
 After the code run successfully we can run following command to see the detailed report of the tests.
