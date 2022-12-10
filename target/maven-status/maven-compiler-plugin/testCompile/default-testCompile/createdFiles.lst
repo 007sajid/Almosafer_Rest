@@ -1,2 +1,5 @@
+tests/PostPricePolicy.class
 actions/Assertions.class
+tests/BaseTest.class
 actions/APIActions.class
+tests/GetFlight.class

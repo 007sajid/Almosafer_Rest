@@ -3,8 +3,6 @@ package tests;
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.annotations.Test;
-
 import endpoints.APIConstants;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -23,18 +21,20 @@ public class PostPricePolicy extends BaseTest {
 	@Description("Verify that Status code is 200 when we try to check policy of coming dates")
 	public void postPricePolicy() {
 		
-		checkIn="2022-12-15";
-		checkOut= "2022-12-16";
-		
-		Response response = RestAssured.given().spec(spec).when().body(requestPayload.createPayLoad(APIConstants.checkIn,APIConstants.checkOut))
-				.post(APIConstants.postPricePolicy);
+		Response response = RestAssured.given().spec(spec).when().
+				body(requestPayload.createPayLoad(APIConstants.checkIn,APIConstants.checkOut)).
+				post(APIConstants.postPricePolicy);
 		
 		
 		  expected = apiActions.getDataFromJsonPath(response, "unitPriceDetails.currency");
 		  
 		  assertions.verifyResponseBody(expected,"SAR","Verify currency name");
 		  assertions.verifyStatusCode(response);
+		  assertions.verifyResponseBody((float)apiActions.getDataFromJsonPath(response, "unitPriceDetails.totalPrice"), 2150.0, "Verify Total Price");
+		  assertions.verifyResponseBody((boolean)apiActions.getDataFromJsonPath(response, "unitPriceDetails.hostPreApprovalRequired"), false, "Verify Total Price");
 		  
+		  Log.info("Test ran successfully.");
+		  Log.error("Error appeared.");
 		  
 		  
 }
@@ -54,7 +54,8 @@ public class PostPricePolicy extends BaseTest {
 				post(APIConstants.postPricePolicy);
 		 
 		assertions.verifyBadRequest(response);
-		  
+		Log.info("Test ran successfully.");
+		  Log.error("Error appeared.");  
 		  
 		  
 }

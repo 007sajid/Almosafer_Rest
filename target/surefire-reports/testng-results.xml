@@ -2,34 +2,34 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-10T14:11:06Z" name="Suite" finished-at="2022-12-10T14:11:11Z" duration-ms="5054">
+  <suite started-at="2022-12-10T20:38:06Z" name="Suite" finished-at="2022-12-10T20:38:11Z" duration-ms="5316">
     <groups>
     </groups>
-    <test started-at="2022-12-10T14:11:06Z" name="Test" finished-at="2022-12-10T14:11:11Z" duration-ms="5054">
+    <test started-at="2022-12-10T20:38:06Z" name="Test" finished-at="2022-12-10T20:38:11Z" duration-ms="5316">
       <class name="tests.GetFlight">
-        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.GetFlight@48d7ad8b]" started-at="2022-12-10T19:11:10Z" name="setUpConfiguration" finished-at="2022-12-10T19:11:10Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.GetFlight@48d7ad8b]" started-at="2022-12-11T01:38:10Z" name="setUpConfiguration" finished-at="2022-12-11T01:38:10Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfiguration -->
-        <test-method signature="testGetFlights()[pri:0, instance:tests.GetFlight@48d7ad8b]" started-at="2022-12-10T19:11:10Z" name="testGetFlights" finished-at="2022-12-10T19:11:11Z" duration-ms="1168" status="PASS">
+        <test-method signature="testGetFlights()[pri:0, instance:tests.GetFlight@48d7ad8b]" started-at="2022-12-11T01:38:10Z" name="testGetFlights" finished-at="2022-12-11T01:38:11Z" duration-ms="1087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetFlights -->
       </class> <!-- tests.GetFlight -->
       <class name="tests.PostPricePolicy">
-        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-10T19:11:06Z" name="setUpConfiguration" finished-at="2022-12-10T19:11:08Z" duration-ms="1186" status="PASS">
+        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-11T01:38:06Z" name="setUpConfiguration" finished-at="2022-12-11T01:38:07Z" duration-ms="1187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfiguration -->
-        <test-method signature="postPricePolicy()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-10T19:11:08Z" name="postPricePolicy" finished-at="2022-12-10T19:11:10Z" duration-ms="1884" status="PASS">
+        <test-method signature="postPricePolicy()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-11T01:38:07Z" name="postPricePolicy" finished-at="2022-12-11T01:38:09Z" duration-ms="2127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postPricePolicy -->
-        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-10T19:11:10Z" name="setUpConfiguration" finished-at="2022-12-10T19:11:10Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUpConfiguration()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-11T01:38:09Z" name="setUpConfiguration" finished-at="2022-12-11T01:38:09Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfiguration -->
-        <test-method signature="postPricePolicyOldDate()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-10T19:11:10Z" name="postPricePolicyOldDate" finished-at="2022-12-10T19:11:10Z" duration-ms="795" status="PASS">
+        <test-method signature="postPricePolicyOldDate()[pri:0, instance:tests.PostPricePolicy@6b530eb9]" started-at="2022-12-11T01:38:09Z" name="postPricePolicyOldDate" finished-at="2022-12-11T01:38:10Z" duration-ms="892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postPricePolicyOldDate -->
