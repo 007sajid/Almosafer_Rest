@@ -22,7 +22,7 @@ public class BaseTest {
 	@BeforeMethod
 
 	protected void setUpConfiguration() {
-
+		//Its a header setup and can be used for almost all API calls in the project
 		spec = new RequestSpecBuilder().setBaseUri(APIConstants.baseUrl)
 				.setConfig(newConfig().logConfig(logConfig().blacklistHeader("Authorization")))
 				.addHeader("x-authorization", APIConstants.token).setAccept("application/json")

@@ -12,10 +12,13 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.restassured.RestAssured;
 
-import utils.DataUtils;
 
 public class GetFlight extends BaseTest {
-
+	/*
+	 * This test is a basic demonstration that how simple Automation can get. 
+	 * This test hits an API with required URL takes the response and verify the response
+	 * All in one line of code. Thanks to RestAssured library.
+	*/
 	private static Logger Log = LogManager.getLogger(GetFlight.class.getName());
 
 	@Test()
@@ -24,7 +27,6 @@ public class GetFlight extends BaseTest {
 	@Description("Verify that Status code is 200 when we get Flights from two cities")
 	public void testGetFlights() {
 
-		System.out.println(DataUtils.getTestData("TestData", "Token", "Value"));
 		RestAssured.given().
 					spec(spec).
 					when().

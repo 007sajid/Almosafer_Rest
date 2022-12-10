@@ -5,7 +5,7 @@ import static org.testng.Assert.assertEquals;
 import io.restassured.response.Response;
 
 public class Assertions {
-
+	//Multiple assertions are available in order to use them to verify API responses and their data.
 	public void verifyStatusCode(Response response) {
 		assertEquals(String.valueOf(response.getStatusCode()).startsWith("20"), true,
 				"value of status code is" + response.getStatusCode());

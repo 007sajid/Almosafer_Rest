@@ -12,6 +12,13 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class PostPricePolicy extends BaseTest {
+	
+	/*
+	 * This test is created in another way than the Getflight.java one. 
+	 * This test has separate assertions to it. 
+	 * Check in and Check out dates are coming from a file at the moment
+	 * But we can change it to variables or from API responses as per our needs.
+	 */
 
 	private static Logger Log = LogManager.getLogger(PostPricePolicy.class.getName());
 	String expected,checkIn,checkOut;

@@ -8,7 +8,7 @@ import pojos.BookAlmosafer;
 public class Payload {
 
 	protected Gson gson = new Gson();
-
+	// Getting pojo help to create required JSON body for POST call.
 	public String createPayLoad(String checkIn , String checkOut) {
 		BookAlmosafer bookAlmosafer = new BookAlmosafer();
 

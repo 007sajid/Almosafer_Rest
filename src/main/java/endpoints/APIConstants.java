@@ -4,13 +4,15 @@ import utils.DataUtils;
 //DataUtils.getTestData("TestData", "Token", "Value");;
 public class APIConstants {
 
-	//public final static String baseUrl = "https://www.almosafer.com/api/";
-			
+	//Endpoints creation. 
 	public final static String baseUrl = DataUtils.getTestData("Sheet1", "BaseUrl", "Value");
 	
-	//DataUtils.getTestData("Sheet1")
 	public final static String postPricePolicy = "accommodation/property/prices-policies";
-	public final static String getFlight = "flight/resource/codes/RUH,JED";// + DataUtils.getTestData("TestData", "Username", "Value") + "/repos";
+	
+	public final static String getFlight = "flight/resource/codes/"
+	+ DataUtils.getTestData("Sheet2", "FlightFrom", "Value")
+	+ "," +
+	DataUtils.getTestData("Sheet2", "FlightTo", "Value")+"";
 
 	public final static String token = DataUtils.getTestData("Sheet1", "Token", "Value");
 	public final static String checkIn = DataUtils.getTestData("Sheet2", "CheckIn", "Value");

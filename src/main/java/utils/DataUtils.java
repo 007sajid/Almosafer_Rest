@@ -11,7 +11,7 @@ public class DataUtils {
 	private static Logger Log = LogManager.getLogger(DataUtils.class.getName());
 
 	static String filePath = System.getProperty("user.dir") + "/resources/" + "TestData.xlsx";
-
+	// Get Test data is getting values from TestData.xlsx in order to create our endpoints and JSON body as well.
 	public static String getTestData(String sheetname, String id, String field) {
 		String value = null;
 		try {
@@ -39,7 +39,7 @@ public class DataUtils {
 		}
 		return value;
 	}
-
+	// This method is not used yet in our tests but we can use it if we want to add details in a file for us.
 	public static void insertData(String sheetName, String columnName, String value) {
 		try {
 			Fillo fillo = new Fillo();
