@@ -9,12 +9,12 @@ public class Payload {
 
 	protected Gson gson = new Gson();
 
-	public String createPayLoad() {
+	public String createPayLoad(String checkIn , String checkOut) {
 		BookAlmosafer bookAlmosafer = new BookAlmosafer();
 
 		bookAlmosafer.setPropertyId(1534);
-		bookAlmosafer.setCheckIn("2022-12-09");
-		bookAlmosafer.setCheckOut("2022-12-10");
+		bookAlmosafer.setCheckIn(checkIn);
+		bookAlmosafer.setCheckOut(checkOut);
 		return gson.toJson(bookAlmosafer);
 	}
 }

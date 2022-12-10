@@ -17,17 +17,28 @@ import io.qameta.allure.SeverityLevel;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
+import utils.DataUtils;
+
 public class GetFlight extends BaseTest {
 
 	private static Logger Log = LogManager.getLogger(GetFlight.class.getName());
 
-	@Test
+	@Test()
 	@Owner("Sajid")
 	@Severity(SeverityLevel.NORMAL)
-	@Description("Verify that Status code is 200 when we get GitHub RequestPayloads of User")
+	@Description("Verify that Status code is 200 when we get Flights from two cities")
 	public void testGetFlights() {
-				RestAssured.given().spec(spec).when().get(APIConstants.getFlight).then().log().all().assertThat()
-				.statusCode(200).time(lessThan(5L), TimeUnit.SECONDS);
+
+		System.out.println(DataUtils.getTestData("TestData", "Token", "Value"));
+		RestAssured.given().
+					spec(spec).
+					when().
+					get(APIConstants.getFlight).then().
+					log().
+					all().
+					assertThat().
+					statusCode(200).
+					time(lessThan(5L), TimeUnit.SECONDS);
 		
 
 		

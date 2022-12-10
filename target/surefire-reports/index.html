@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.PostPricePolicy" class="method navigator-link" hash-for-method="postPricePolicy">postPricePolicy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.PostPricePolicy" class="method navigator-link" hash-for-method="postPricePolicyOldDate">postPricePolicyOldDate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,6 +137,13 @@
                   <a name="postPricePolicy">
                   </a> <!-- postPricePolicy -->
                   <span class="method-name">postPricePolicy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postPricePolicyOldDate">
+                  </a> <!-- postPricePolicyOldDate -->
+                  <span class="method-name">postPricePolicyOldDate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,15 +216,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'postPricePolicy')
 data.setCell(0, 2, 'tests.PostPricePolicy')
-data.setCell(0, 3, 1760);
+data.setCell(0, 3, 1884);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testGetFlights')
 data.setCell(1, 2, 'tests.GetFlight')
-data.setCell(1, 3, 1646);
+data.setCell(1, 3, 1168);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'postPricePolicyOldDate')
+data.setCell(2, 2, 'tests.PostPricePolicy')
+data.setCell(2, 3, 795);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -250,18 +266,26 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">postPricePolicy</span>
-                <span class="method-start">460 ms</span>
+                <span class="method-start">1186 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpConfiguration</span>
+                <span class="method-start">3075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">postPricePolicyOldDate</span>
+                <span class="method-start">3076 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.GetFlight</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUpConfiguration</span>
-                <span class="method-start">2225 ms</span>
+                <span class="method-start">3872 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGetFlights</span>
-                <span class="method-start">2227 ms</span>
+                <span class="method-start">3874 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

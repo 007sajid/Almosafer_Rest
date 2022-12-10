@@ -10,7 +10,10 @@ public class Assertions {
 		assertEquals(String.valueOf(response.getStatusCode()).startsWith("20"), true,
 				"value of status code is" + response.getStatusCode());
 	}
-
+	public void verifyBadRequest(Response response) {
+		assertEquals(String.valueOf(response.getStatusCode()).startsWith("40"), true,
+				"value of status code is" + response.getStatusCode());
+	}
 	public void verifyResponseBody(String actual, String expected, String description) {
 		assertEquals(actual, expected, description);
 
